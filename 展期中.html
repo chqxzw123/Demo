@@ -1145,7 +1145,7 @@
       <div id="u488" class="ax_default label">
         <div id="u488_div" class=""></div>
         <div id="u488_text" class="text ">
-          <p><span>已逾期</span></p>
+          <p><span>已逾期（展期）</span></p>
         </div>
       </div>
 
@@ -1446,7 +1446,7 @@
       <div id="u531" class="ax_default label">
         <div id="u531_div" class=""></div>
         <div id="u531_text" class="text ">
-          <p><span>借款总费用</span></p>
+          <p><span>借款费用</span></p>
         </div>
       </div>
 
@@ -1499,7 +1499,7 @@
       <div id="u538" class="ax_default label">
         <div id="u538_div" class=""></div>
         <div id="u538_text" class="text ">
-          <p><span>7天</span></p><p><span><br></span></p><p><span>10%</span></p><p><span><br></span></p><p><span>100元</span></p><p><span><br></span></p><p><span>100元</span></p><p><span><br></span></p><p><span>0.05%</span></p><p><span><br></span></p><p><span>1,000元</span></p><p><span><br></span></p><p><span>2018-12-29 09:57:26</span></p>
+          <p><span>7天（展期7天）</span></p><p><span><br></span></p><p><span>10%</span></p><p><span><br></span></p><p><span>100元</span></p><p><span><br></span></p><p><span>100元</span></p><p><span><br></span></p><p><span>0.05%</span></p><p><span><br></span></p><p><span>1,000元</span></p><p><span><br></span></p><p><span>2018-12-29 09:57:26</span></p>
         </div>
       </div>
 
@@ -1569,7 +1569,7 @@
       <div id="u549" class="ax_default label">
         <div id="u549_div" class=""></div>
         <div id="u549_text" class="text ">
-          <p><span>页面说明：</span></p><p><span><br></span></p><p><span>1、做展期的情况下，页面流程如左边顺序；</span></p><p><span><br></span></p><p><span>2、增加状态“展期中”，对应后台“展期中”；</span></p><p><span><br></span></p><p><span>3、展期后“我要展期”按钮变为“再次展期”；</span></p><p><span><br></span></p><p><span>4、展期后，底部状态“待还款”变为“展期中”，“已逾期”变为“展期中”，状态下文案变为“展期次数：x次”“支付展期费用：xx元”“已还金额：xx元”，展期次数取后台展期次数字段，支付展期费用展示本次支付的费用，已还金额取后台已还金额；</span></p><p><span><br></span></p><p><span>5、“支付展期费用”算法如下：</span></p><p><span>&nbsp;&nbsp;&nbsp; 均前置：展期利息+展期平台服务费+逾期利息</span></p><p><span>&nbsp;&nbsp;&nbsp; 服务费前置，利息后置：利息+展期平台服务费+逾期利息</span></p><p><span>&nbsp;&nbsp;&nbsp; 均后置：利息+平台服务费+展期平台服务费+逾期利息，平台服务费已扣除时此处按照零计算</span></p><p><span><br></span></p><p><span>6、“展期中”状态或者“展期中”变成“已逾期”状态时，申请期限应包含展期部分天数，展示文案为“申请期限：x天（展期x天）”，申请期限=借款期限+n单次展期天数，n代表展期次数，展期次数=n单次展期天数；</span></p>
+          <p><span>页面说明：</span></p><p><span><br></span></p><p><span>1、做展期的情况下，页面流程如左边顺序；</span></p><p><span><br></span></p><p><span>2、增加状态“展期中”，对应后台“展期中”；</span></p><p><span><br></span></p><p><span>3、展期后“我要展期”按钮变为“再次展期”；</span></p><p><span><br></span></p><p><span>4、展期后，底部状态“待还款”变为“展期中”，“已逾期”变为“展期中”，状态下文案变为“展期次数：x次”“支付展期费用：xx元”“已还金额：xx元”，展期次数取后台展期次数字段，支付展期费用展示本次支付的费用，已还金额取后台已还金额；</span></p><p><span><br></span></p><p><span>5、“支付展期费用”算法如下：</span></p><p><span>&nbsp;&nbsp;&nbsp; 均前置：展期利息+展期平台服务费+逾期利息</span></p><p><span>&nbsp;&nbsp;&nbsp; 服务费前置，利息后置：利息+展期平台服务费+逾期利息</span></p><p><span>&nbsp;&nbsp;&nbsp; 均后置：利息+平台服务费+展期平台服务费+逾期利息，平台服务费已扣除时此处按照零计算</span></p><p><span><br></span></p><p><span>6、“展期中”状态或者“展期中”变成“已逾期”状态时，申请期限应包含展期部分天数，展示文案为“申请期限：x天（展期x天）”，申请期限=借款期限+n单次展期天数，n代表展期次数，展期次数=n单次展期天数；</span></p><p><span><br></span></p><p><span><br></span></p><p><span style="color:#FF0000;">修改：</span></p><p><span style="color:#FF0000;"><br></span></p><p><span style="color:#FF0000;">“借款费用”算法修改：</span></p><p><span style="color:#FF0000;">&nbsp;&nbsp;&nbsp; 未展期：</span></p><p><span style="color:#FF0000;">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 均前置：平台服务费+利息</span></p><p><span style="color:#FF0000;">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 服务费前置，利息后置：平台服务费</span></p><p><span style="color:#FF0000;">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 均后置：平台服务费，未扣除成功时为零</span></p><p><span style="color:#FF0000;">&nbsp;&nbsp;&nbsp; 展期后：</span></p><p><span style="color:#FF0000;">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 均前置：本次展期平台服务费+本次展期利息+上一次进件或展期逾期利息-本次展期减免金额</span></p><p><span style="color:#FF0000;">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 服务费前置，利息后置：上一次进件或展期利息+本次展期平台服务费+上一次进件或展期逾期利息-本次展期减免金额</span></p><p><span style="color:#FF0000;">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 均后置：上一次进件或展期利息+本次展期平台服务费+上一次进件或展期逾期利息-本次展期减免金额</span></p>
         </div>
       </div>
     </div>
